@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>教學開課|MZM夢之眉 Dream'sbrows</title>
+<meta name="description" content="Rhea 紋繡教學:Workshop 工作坊、進階教學指導與學員作品檢閱,從基礎到進階,把技術真正學到手。">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="container">
+    <div class="topbar-main">
+      <a class="brand" href="index.html">MZM夢之眉 <span class="latin">Dream'sbrows</span></a>
+      <a class="btn" href="#booking">預約諮詢</a>
+    </div>
+    <div class="nav-wrap"><nav class="nav-links">
+      <a href="index.html">首頁</a>
+      <a href="about.html">關於 Rhea</a>
+      <a href="services.html">紋繡服務</a>
+      <a href="areola.html">乳暈紋繡</a>
+      <a class="active" href="academy.html">教學開課</a>
+      <a href="faq.html">常見問題</a>
+    </nav></div>
+  </div>
+</header>
+<div class="container page-head">
+  <h1 class="reveal">教學與開課</h1>
+  <p class="lead reveal d1">Rhea 以講師身分開課授徒,從基礎到進階,帶想入行的你把技術真正學到手。</p>
+</div>
+<section>
+  <div class="container">
+    <ul class="teach-list reveal d1">
+      <li>
+        <h3><span class="latin">Workshop</span> 工作坊</h3>
+        <p>不定期開課,理論與實作並行,現場示範與練習,適合想入門或補基本功的你。</p>
+      </li>
+      <li>
+        <h3>進階教學指導</h3>
+        <p>依程度規劃訓練內容,從打稿、力道到色乳運用逐項調整,盯緊每一個細節。</p>
+      </li>
+      <li>
+        <h3><span class="latin">Student Work</span> 作品檢閱</h3>
+        <p>學員作品逐件回饋,修正細節,累積能實際接客的判斷與實力。</p>
+      </li>
+    </ul>
+    <p class="teach-cta reveal d2"><a class="btn" href="https://lin.ee/feas9vA" target="_blank" rel="noopener">LINE 詢問開課</a></p>
+  </div>
+</section>
+<section class="reviews">
+  <div class="container">
+    <h2 class="reveal">學員作品</h2>
+    <p class="sec-lead reveal d1">正式上線後,這裡會放上 Workshop 現場與學員的練習成果。</p>
+    <div class="works-grid reveal d1">
+      <div class="work"><span class="ph-label">學員作品照置入區</span></div>
+      <div class="work"><span class="ph-label">學員作品照置入區</span></div>
+      <div class="work"><span class="ph-label">學員作品照置入區</span></div>
+    </div>
+    <p class="works-note reveal d2">更多教學紀錄請見 <a href="https://www.instagram.com/phiacademy_rhea/" target="_blank" rel="noopener">Instagram</a> 精選。</p>
+  </div>
+</section>
+<section class="booking" id="booking">
+  <div class="container">
+    <h2 class="reveal">預約你的專屬眉型</h2>
+    <p class="sec-lead reveal d1">先聊聊你想要的樣子,再決定要不要做。加入官方 LINE,把你的素顏眉照片傳給我們,就能開始諮詢。</p>
+    <div class="booking-cta reveal d2">
+      <a class="btn btn-cream" href="https://lin.ee/feas9vA" target="_blank" rel="noopener">LINE 預約</a>
+      <span class="call-note">也歡迎來電預約</span>
+    </div>
+  </div>
+  <footer>
+    <div class="container">
+      <div class="foot-grid">
+        <p class="foot-brand">MZM夢之眉 <span class="latin">Dream'sbrows</span> 職人手工美學</p>
+        <p class="foot-addr">台中市台中路 192 號</p>
+        <p><a href="https://www.instagram.com/phiacademy_rhea/" target="_blank" rel="noopener">Instagram</a>|<a href="https://www.facebook.com/dreamsbrows" target="_blank" rel="noopener">Facebook 粉絲專頁</a></p>
+        <p class="foot-copy">© 2026 MZM夢之眉 Dream'sbrows 職人手工美學</p>
+      </div>
+    </div>
+  </footer>
+</section>
+<script>
+document.documentElement.classList.add("js");
+(function(){
+  var els=document.querySelectorAll(".reveal");
+  if(!("IntersectionObserver" in window)){
+    els.forEach(function(el){el.classList.add("in");});
+    return;
+  }
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target);}
+    });
+  },{threshold:.15});
+  els.forEach(function(el){io.observe(el);});
+})();
+</script>
+</body>
+</html>

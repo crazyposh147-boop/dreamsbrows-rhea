@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>關於 Rhea|MZM夢之眉 Dream'sbrows</title>
+<meta name="description" content="台灣唯一同時擁有 Phibrows、PhiShading、PhiAreola 三項 Master 認證的紋繡師 Rhea,深耕半永久紋繡多年,並以講師身分培訓新一代紋繡師。">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="container">
+    <div class="topbar-main">
+      <a class="brand" href="index.html">MZM夢之眉 <span class="latin">Dream'sbrows</span></a>
+      <a class="btn" href="#booking">預約諮詢</a>
+    </div>
+    <div class="nav-wrap"><nav class="nav-links">
+      <a href="index.html">首頁</a>
+      <a class="active" href="about.html">關於 Rhea</a>
+      <a href="services.html">紋繡服務</a>
+      <a href="areola.html">乳暈紋繡</a>
+      <a href="academy.html">教學開課</a>
+      <a href="faq.html">常見問題</a>
+    </nav></div>
+  </div>
+</header>
+<div class="container page-head">
+  <h1 class="reveal">關於 Rhea</h1>
+  <p class="lead reveal d1">台灣唯一,同時擁有三項 <span class="nowrap latin">PhiAcademy</span> <span class="nowrap latin">Master</span> 認證的紋繡師。</p>
+</div>
+<section class="about">
+  <div class="container about-grid">
+    <div class="about-visual reveal"><span class="ph-label">Rhea 老師形象照置入區</span></div>
+    <div>
+      <p class="reveal d1">Rhea 老師深耕半永久紋繡多年,是台灣唯一同時擁有 <span class="nowrap latin">Phibrows</span>、<span class="nowrap latin">PhiShading</span> 與 <span class="nowrap latin">PhiAreola</span> 三項 Master 認證的紋繡師。從眉、眼、唇到術後的乳暈紋繡,每一筆都親自設計與操作。</p>
+      <p class="reveal d1">她相信眉型沒有公式:每一張臉的骨相、肌肉走向與生活習慣都不一樣,值得被仔細研究之後,才下第一筆。</p>
+      <p class="reveal d1">除了服務客人,Rhea 也以講師身分培訓新一代紋繡師,把上千位客人累積下來的手感與判斷,變成帶得走的技術。</p>
+      <ul class="cred reveal d2">
+        <li><span class="nowrap latin">Phibrows Master</span><span>手工仿真飄眉 國際 Master 認證</span></li>
+        <li><span class="nowrap latin">PhiShading Master</span><span>粉霧眉 國際 Master 認證</span></li>
+        <li><span class="nowrap latin">PhiAreola Master</span><span>乳暈紋繡 國際 Master 認證</span></li>
+        <li>講師資歷與上千位服務經驗<span>各種膚質與眉況都處理過,也帶學員從零到接客</span></li>
+      </ul>
+      <p class="more reveal d2"><a href="academy.html">想跟 Rhea 學技術?看教學與開課 →</a></p>
+    </div>
+  </div>
+</section>
+<section class="booking" id="booking">
+  <div class="container">
+    <h2 class="reveal">預約你的專屬眉型</h2>
+    <p class="sec-lead reveal d1">先聊聊你想要的樣子,再決定要不要做。加入官方 LINE,把你的素顏眉照片傳給我們,就能開始諮詢。</p>
+    <div class="booking-cta reveal d2">
+      <a class="btn btn-cream" href="https://lin.ee/feas9vA" target="_blank" rel="noopener">LINE 預約</a>
+      <span class="call-note">也歡迎來電預約</span>
+    </div>
+  </div>
+  <footer>
+    <div class="container">
+      <div class="foot-grid">
+        <p class="foot-brand">MZM夢之眉 <span class="latin">Dream'sbrows</span> 職人手工美學</p>
+        <p class="foot-addr">台中市台中路 192 號</p>
+        <p><a href="https://www.instagram.com/phiacademy_rhea/" target="_blank" rel="noopener">Instagram</a>|<a href="https://www.facebook.com/dreamsbrows" target="_blank" rel="noopener">Facebook 粉絲專頁</a></p>
+        <p class="foot-copy">© 2026 MZM夢之眉 Dream'sbrows 職人手工美學</p>
+      </div>
+    </div>
+  </footer>
+</section>
+<script>
+document.documentElement.classList.add("js");
+(function(){
+  var els=document.querySelectorAll(".reveal");
+  if(!("IntersectionObserver" in window)){
+    els.forEach(function(el){el.classList.add("in");});
+    return;
+  }
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target);}
+    });
+  },{threshold:.15});
+  els.forEach(function(el){io.observe(el);});
+})();
+</script>
+</body>
+</html>
